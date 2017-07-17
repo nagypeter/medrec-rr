@@ -8,18 +8,19 @@ This page contains a collection of supporting material from the **Make you Micro
 
 You can download the presentation from [here](TODOADDLINK).
 
-## Code examples
+## The code
 
 * [MedRec Monolithic Application](TODOADDLINK).
 * [Physicians NodeJS Microservice](TODOADDLINK).
 * [Patients Java Spring Microservice](TODOADDLINK).
 
-## API Tutorial
+## Supporting articles
+
+* [Topdown Polyglot Microservices with OpenAPI](TODOADDLINK)
 
 ## Related Content
 
 * [Anki-MedRec Lab Exercies](https://barackd222.github.io/)
-* [Topdown Polyglot Microservices with OpenAPI](TODOADDLINK)
 
 TODO: Add remaining blogs...
 
