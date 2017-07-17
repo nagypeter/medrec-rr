@@ -1,18 +1,14 @@
 # Overview
 
-**Work in progress**: This page is a work in progress and will be completed on the morning of the event.
-
 This is a collection of supporting material from the **Make you Microservices sing!** talk at [Oracle Code Sydney](https://developer.oracle.com/code/sydney) on the 17th of July, 2017.
 
 ## The presentation
 
-You can download the presentation in PDF from [here](TODOADDLINK) or view it in the web-browser [here](TODOADDLINK).
+The presentation link will be added here the day after the session.
 
 ## The code
 
-TODO: Add diagram
-
-* [MedRec Monolithic Application](TODOADDLINK): WebLogic application on Docker
+* [MedRec Monolithic Application](https://github.com/craigbarrau/medrec-monolith): WebLogic application on Docker
 * [Physicians Microservice](https://github.com/craigbarrau/medrec-physicians): Simple NodeJS API on Docker
 * [Patients Microservice](https://github.com/craigbarrau/medrec-patients): Simple Java Spring API example with Liquibase on Docker
 
@@ -73,6 +69,14 @@ cd medrec-physicians && docker-compose up –d
 ```
 curl http://localhost:10010/physicians
 ```
+4. If you want to test the Swagger definition, try this:
+```
+swagger project edit
+```
+5. If you want to build using `wercker` try this:
+```
+wercker dev
+```
 
 ## Run the MedRec Patients Java Spring + Liquibase Microservice
 
@@ -91,13 +95,13 @@ curl http://localhost:10011/medrec/patients
 
 ## Supporting articles
 
-* [Topdown Polyglot Microservices with OpenAPI](TODOADDLINK)
+* [Topdown Polyglot Microservices with OpenAPI](http://blog.rubiconred.com/topdown-polyglot-microservices-with-openapi/)
 * [Tips and tricks for configuring WebLogic Resources on Docker boot](http://blog.rubiconred.com/tips-and-tricks-for-configuring-weblogic-resources-on-docker-boot)
 
-## Related Content
+## Related content
 
 * [Anki-MedRec Lab Exercises](https://barackd222.github.io/)
-* [Complete MedRec API Code Example](https://github.com/barackd222/ankimedrec-apis)
+* [Complete MedRec API Example](https://github.com/barackd222/ankimedrec-apis)
 
 ## Wishlist
 
