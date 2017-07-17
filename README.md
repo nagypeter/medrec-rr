@@ -113,7 +113,7 @@ curl http://localhost:10011/medrec/patients
 
 * **Blog:** [Streamline your PCS models with DMN](http://blog.rubiconred.com/working-with-decision-model-and-notation-in-oracle-process-cloud-service/)
 
-* **Blog:** [Patient Health Monitoring with IoT and PCS](http://blog.rubiconred.com/iot-health-monitoring/)
+* **Blog:** [Patient Health Monitoring with Internet of Things (IOT) and PCS](http://blog.rubiconred.com/iot-health-monitoring/)
 
 * **Blog:** [Integration Cloud Service (ICS) and Twilio](http://blog.rubiconred.com/oracle-ics-and-twilio-publish-subscribe-integration-pattern/)
 
