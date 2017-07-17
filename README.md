@@ -1,6 +1,6 @@
 # Overview
 
-This is a collection of supporting material from the **Make you Microservices sing!** talk at [Oracle Code Sydney](https://developer.oracle.com/code/sydney) on the 17th of July, 2017.
+This is a collection of supporting material from the **Make you Microservices sing!** talk at [Oracle Code Sydney](https://developer.oracle.com/code/sydney) on the 18th of July, 2017.
 
 ## The presentation
 
