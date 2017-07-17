@@ -53,7 +53,7 @@ docker build -t medrec-monolith .
 ```
 docker run -d -p 7001:7001 --name medrec medrec-monolith 
 ```
-9. Seeding the data with
+9. Seed the data with
 ```
 docker exec -ti medrec /bin/bash -c "java -classpath \$ORACLE_HOME/seed/medrec-data-import.jar:\$ORACLE_HOME/seed/medrec-domain.jar:\$ORACLE_HOME/wlserver/common/derby/lib/derbyclient.jar:\$ORACLE_HOME/wlserver/server/lib/weblogic.jar com.oracle.medrec.util.DataImporter"
 ```
