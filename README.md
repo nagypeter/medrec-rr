@@ -107,15 +107,15 @@ curl http://localhost:10011/medrec/patients
 
 * **Want help getting started with Oracle Cloud?** [Cloud KickStart Datasheet](https://www.rubiconred.com/resource/datasheet-cloud-kickstart/)
 
-* **Case Study**: [Oracle Process Cloud Service at Rubicon Red](https://www.rubiconred.com/resource/cs-rubicon-red-oracle-pcs/)
+* **Case Study**: [Oracle Process Cloud Service (PCS) at Rubicon Red](https://www.rubiconred.com/resource/cs-rubicon-red-oracle-pcs/)
 
-* **Blog:** [Uncovering Booking Fraud with Process Cloud Service and Decision Model and Notation](http://blog.rubiconred.com/complex-decision-making-using-dmn-in-oracle-process-cloud-service/)
+* **Blog:** [Uncovering Booking Fraud with PCS and Decision Model Notation (DMN)](http://blog.rubiconred.com/complex-decision-making-using-dmn-in-oracle-process-cloud-service/)
 
-* **Blog:** [Streamline your Process Cloud Service models with Decision Model and Notation](http://blog.rubiconred.com/working-with-decision-model-and-notation-in-oracle-process-cloud-service/)
+* **Blog:** [Streamline your PCS models with DMN](http://blog.rubiconred.com/working-with-decision-model-and-notation-in-oracle-process-cloud-service/)
 
-* **Blog:** [Patient Health Monitoring with Internet of Things and Process Cloud Service](http://blog.rubiconred.com/iot-health-monitoring/)
+* **Blog:** [Patient Health Monitoring with IoT and PCS](http://blog.rubiconred.com/iot-health-monitoring/)
 
-* **Blog:** [Integration Cloud Service and Twilio](http://blog.rubiconred.com/oracle-ics-and-twilio-publish-subscribe-integration-pattern/)
+* **Blog:** [Integration Cloud Service (ICS) and Twilio](http://blog.rubiconred.com/oracle-ics-and-twilio-publish-subscribe-integration-pattern/)
 
 
 ## Wishlist
