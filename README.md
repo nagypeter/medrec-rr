@@ -103,6 +103,21 @@ curl http://localhost:10011/medrec/patients
 * [Anki-MedRec Lab Exercises](https://barackd222.github.io/)
 * [Complete MedRec API Example](https://github.com/barackd222/ankimedrec-apis)
 
+## Other Resources
+
+* **Want help getting started with Oracle Cloud?** [Cloud KickStart Datasheet](https://www.rubiconred.com/resource/datasheet-cloud-kickstart/)
+
+* **Case Study**: [Oracle Process Cloud Service at Rubicon Red](https://www.rubiconred.com/resource/cs-rubicon-red-oracle-pcs/)
+
+* **Blog:** [Uncovering Booking Fraud with PCS and DMN](http://blog.rubiconred.com/complex-decision-making-using-dmn-in-oracle-process-cloud-service/)
+
+* **Blog:** [Streamline your PCS models with DMN](http://blog.rubiconred.com/working-with-decision-model-and-notation-in-oracle-process-cloud-service/)
+
+* **Blog:** [Patient Health Monitoring with IoT and PCS](http://blog.rubiconred.com/iot-health-monitoring/)
+
+* **Blog:** [ICS and Twilio](http://blog.rubiconred.com/oracle-ics-and-twilio-publish-subscribe-integration-pattern/)
+
+
 ## Wishlist
 
 * Add documentation on how to edit the projects using Swagger
