@@ -101,6 +101,7 @@ curl http://localhost:10011/medrec/patients
 
 ## Wishlist
 
+* Add documentation on how to edit the projects using Swagger
 * Connect the Physicians NodeJS project to MongoDB
 * Flesh out the Patients service implementation to the point of completeness. At present, it supports `GET` only
 * Investigate use of SpringBoot for Patients services
