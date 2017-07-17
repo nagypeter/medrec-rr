@@ -1,6 +1,6 @@
-# Make your Microservices sing!
+# Overview
 
-**Work in progress**: This page is a work in progress and will completed on the morning of the event.
+**Work in progress**: This page is a work in progress and will be completed on the morning of the event.
 
 This is a collection of supporting material from the **Make you Microservices sing!** talk at [Oracle Code Sydney](https://developer.oracle.com/code/sydney) on the 17th of July, 2017.
 
@@ -13,21 +13,27 @@ You can download the presentation in PDF from [here](TODOADDLINK) or view it in 
 TODO: Add diagram
 
 * [MedRec Monolithic Application](TODOADDLINK): WebLogic application on Docker
-* [Physicians Microservice](TODOADDLINK): Simple NodeJS API on Docker
-* [Patients Microservice](TODOADDLINK): Simple Java Spring API example with Liquibase on Docker
+* [Physicians Microservice](https://github.com/craigbarrau/medrec-physicians): Simple NodeJS API on Docker
+* [Patients Microservice](https://github.com/craigbarrau/medrec-patients): Simple Java Spring API example with Liquibase on Docker
 
 ## Prerequisites for running the examples
 
 * At a minimum, you will require `git`, `docker` and `docker-compose` to run the examples
 * Additionally, you may wish to 
-  * install `swagger` to view the documentation, use the API editor and create codeless mocks for new API operations
+  * install `swagger` to view the API documentation, use the API editor or create codeless mocks for new API operations
   * install `wercker` to test out the CI/CD job locally before pushing any changes to Wercker
 
 ## Run the MedRec Monolithic example
 
 1. Follow the first two steps [here](http://blog.rubiconred.com/a-first-look-at-the-oracle-container-registry/) to ensure you have connected to Oracle Container Registry.
-2. Pull down the Oracle WebLogic Domain image with the command `docker pull container-registry.oracle.com/middleware/weblogic:12.2.1.1`
-3. Checkout the medrec monolith project with the command `git clone https://github.com/craigbarrau/medrec-monolithic`
+2. Pull down the Oracle WebLogic Domain image with the command 
+```
+docker pull container-registry.oracle.com/middleware/weblogic:12.2.1.1
+```
+3. Checkout the medrec monolithic codebase
+```
+git clone https://github.com/craigbarrau/medrec-monolithic
+```
 4. Install WebLogic and select the option to include the samples. We need to do this to get access to the MedRec source and distribution files. Sorry about this extra pain but this is the only way to get the samples from Oracle! They are not shared on a public repository.
 5. Copy `medrec.ear` and `physician.ear` from the local WebLogic installation to this directory
 ```
@@ -47,32 +53,60 @@ docker build -t medrec-monolith .
 ```
 docker run -d -p 7001:7001 --name medrec medrec-monolith 
 ```
-9. Seeding the data
+9. Seeding the data with
 ```
 docker exec -ti medrec /bin/bash -c "java -classpath \$ORACLE_HOME/seed/medrec-data-import.jar:\$ORACLE_HOME/seed/medrec-domain.jar:\$ORACLE_HOME/wlserver/common/derby/lib/derbyclient.jar:\$ORACLE_HOME/wlserver/server/lib/weblogic.jar com.oracle.medrec.util.DataImporter"
 ```
 10. We can access our application at `http://localhost:7001/medrec`
 
-## Run MedRec Physicians NodeJS Microservice
+## Run the MedRec Physicians NodeJS Microservice
 
-...
+1. Checkout the Physicians project
+```
+git clone https://github.com/craigbarrau/medrec-physicians
+```
+2. Navigate to the project and start it using `docker-compose`
+```
+cd medrec-physicians && docker-compose up –d
+```
+3. Test access to the API using
+```
+curl http://localhost:10010/physicians
+```
 
-## Ru MedRec Patients Java Spring + Liquibase Microservice
+## Run the MedRec Patients Java Spring + Liquibase Microservice
 
-...
+1. Checkout the Physicians project
+```
+git clone https://github.com/craigbarrau/medrec-patients
+```
+2. Navigate to the project and start it using `docker-compose`
+```
+cd medrec-physicians && docker-compose up –d
+```
+3. Test access to the API using
+```
+curl http://localhost:10011/medrec/patients
+```
 
 ## Supporting articles
 
 * [Topdown Polyglot Microservices with OpenAPI](TODOADDLINK)
+* [Tips and tricks for configuring WebLogic Resources on Docker boot](http://blog.rubiconred.com/tips-and-tricks-for-configuring-weblogic-resources-on-docker-boot)
 
 ## Related Content
 
-* [Anki-MedRec Lab Exercies](https://barackd222.github.io/)
+* [Anki-MedRec Lab Exercises](https://barackd222.github.io/)
+* [Complete MedRec API Code Example](https://github.com/barackd222/ankimedrec-apis)
 
 ## Wishlist
 
-...
-
-TODO: Add remaining blogs...
-
+* Connect the Physicians NodeJS project to MongoDB
+* Flesh out the Patients service implementation to the point of completeness. At present, it supports `GET` only
+* Investigate use of SpringBoot for Patients services
+* Add `manifest.json` so the examples can also be deployed to Application Container Cloud Service
+* Generate the Swagger definition for the Patients codebase to demonstrate the Bottom up approach
+* Create Oracle Developer Cloud Service example build process for one of the microservices
+* Establish rolling deployment process on Kubernetes with Oracle Compute or Oracle Container Cloud Service
+* Link to the corresponding repositories on [Apiary.io](https://apiary.io) and [Swagger Hub](https://app.swaggerhub.com/)
 
