@@ -1,3 +1,5 @@
 theme: jekyll-theme-slate
 title: Make your Microservices sing!
 description: Presentation and code examples from Oracle Code Sydney
+show_downloads: false
+google_analytics: UA-35856338-6
