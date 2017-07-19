@@ -47,7 +47,7 @@ cp $ORACLE_HOME/wlserver/samples/server/medrec/dist/modules/medrec-domain.jar se
 ```
 docker build -t medrec-monolith .
 ```
-8. Start the container with
+8. Run the `medrec-monolith` container image that we built in the previous step
 ```
 docker run -d -p 7001:7001 --name medrec medrec-monolith 
 ```
