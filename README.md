@@ -4,7 +4,7 @@ This is a collection of supporting material from the **Make you Microservices si
 
 ## The presentation
 
-The presentation link will be added here the day after the session.
+The presentation slides are available [here](https://www.slideshare.net/craigbarr7528/make-your-microservices-sing).
 
 ## The code
 
