@@ -29,7 +29,7 @@ docker pull container-registry.oracle.com/middleware/weblogic:12.2.1.1
 3. Checkout the medrec monolithic codebase and navigate to it
 ```
 git clone https://github.com/craigbarrau/medrec-monolith
-cd medrec/monolith
+cd medrec-monolith
 ```
 4. Install WebLogic natively and select the option to include the samples. We need to do this to get access to the MedRec source and distribution files. Sorry about the extra pain but this is the only way to get the sample source code and/or distribution ear files. They are not shared on a public repository by Oracle other than via download of WebLogic from [here](http://www.oracle.com/technetwork/middleware/fusion-middleware/downloads/index.html). You will need an Oracle account to download.
 5. After installation, copy `medrec.ear` and `physician.ear` from the local WebLogic installation (refered to as `ORACLE_HOME`) to the `medrec-monolith` directory which we previously cloned from `git`
