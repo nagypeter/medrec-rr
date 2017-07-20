@@ -71,7 +71,8 @@ git clone https://github.com/craigbarrau/medrec-physicians
 ```
 2. Navigate to the project and start it using `docker-compose`
 ```
-cd medrec-physicians && docker-compose up –d
+cd medrec-physicians
+docker-compose up –d
 ```
 3. Test access to the API using
 ```
@@ -94,7 +95,8 @@ git clone https://github.com/craigbarrau/medrec-patients
 ```
 2. Navigate to the project and start it using `docker-compose`
 ```
-cd medrec-patients && docker-compose up –d
+cd medrec-patients
+docker-compose up –d
 ```
 3. Test access to the API using
 ```
