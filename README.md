@@ -56,13 +56,12 @@ docker run -d -p 7001:7001 --name medrec medrec-monolith
 <Jul 19, 2017, 12:23:01,939 AM UTC> <Notice> <WebLogicServer> <BEA-000360> <The server started in RUNNING mode.> 
 <Jul 19, 2017, 12:23:01,965 AM UTC> <Notice> <WebLogicServer> <BEA-000365> <Server state changed to RUNNING.>
 ```
-9. Seed the data for our monolithic MedRec application by running the following
+10. Seed the data for our monolithic MedRec application by running the following
 ```
 docker exec -ti medrec /bin/bash -c "java -classpath \$ORACLE_HOME/seed/medrec-data-import.jar:\$ORACLE_HOME/seed/medrec-domain.jar:\$ORACLE_HOME/wlserver/common/derby/lib/derbyclient.jar:\$ORACLE_HOME/wlserver/server/lib/weblogic.jar com.oracle.medrec.util.DataImporter"
 ```
 If it is successful we should see the message `All the data has been imported successfully!`
-
-10. We can access our application at `http://localhost:7001/medrec`
+11. We can access our application at `http://localhost:7001/medrec`
 
 ## Run the MedRec Physicians NodeJS Microservice
 
