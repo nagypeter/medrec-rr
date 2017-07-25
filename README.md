@@ -59,8 +59,9 @@ docker run -d -p 7001:7001 --name medrec medrec-monolith
 9. Seed the data for our monolithic MedRec application by running the following
 ```
 docker exec -ti medrec /bin/bash -c "java -classpath \$ORACLE_HOME/seed/medrec-data-import.jar:\$ORACLE_HOME/seed/medrec-domain.jar:\$ORACLE_HOME/wlserver/common/derby/lib/derbyclient.jar:\$ORACLE_HOME/wlserver/server/lib/weblogic.jar com.oracle.medrec.util.DataImporter"
-If it is successful we should see the message `All the data has been imported successfully!`
 ```
+If it is successful we should see the message `All the data has been imported successfully!`
+
 10. We can access our application at `http://localhost:7001/medrec`
 
 ## Run the MedRec Physicians NodeJS Microservice
