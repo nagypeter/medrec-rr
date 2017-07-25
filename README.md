@@ -51,7 +51,9 @@ docker build -t medrec-monolith .
 ```
 docker run -d -p 7001:7001 --name medrec medrec-monolith 
 ```
-9. Wait for the instance to startup at `http://localhost:7001/medrec`. We can tail the logs with `docker logs -f medrec`. We know it is running when we see a log message like this:
+Wait for the instance to startup at `http://localhost:7001/medrec`. 
+
+9. We can tail the logs with `docker logs -f medrec`. We know it is running when we see a log message like this:
 
 ```
 <Jul 19, 2017, 12:23:01,939 AM UTC> <Notice> <WebLogicServer> <BEA-000360> <The server started in RUNNING mode.> 
